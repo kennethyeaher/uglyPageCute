@@ -19,7 +19,7 @@
         <!-- introduce the recipe before the cooking details -->
         <header class="recipe-header">
             <p class="eyebrow">The recipe notebook <span aria-hidden="true">/</span> Baking</p>
-            <h1>Classic chocolate<br>chip cookies<span class="title-period">.</span></h1>
+            <h1>Classic chocolate <br>chip cookies<span class="title-period">.</span></h1>
             <p class="recipe-description">Crispy edges. Chewy middles. Plenty of chocolate. A classic batch for lunch boxes, holiday gatherings, or just because.</p>
             <a class="recipe-link" href="#instructions">Let's bake <span aria-hidden="true">↘</span></a>
         </header>
@@ -47,18 +47,72 @@
                 <h2 id="ingredients-title">Ingredients</h2>
                 <span class="section-detail">One batch</span>
             </div>
-            <ul class="ingredients-list">
-                <li><span><strong>2¼ cups</strong> all-purpose flour</span></li>
-                <li><span><strong>1 teaspoon</strong> baking soda</span></li>
-                <li><span><strong>1 teaspoon</strong> salt</span></li>
-                <li><span><strong>1 cup (2 sticks)</strong> butter, softened</span></li>
-                <li><span><strong>¾ cup</strong> granulated sugar</span></li>
-                <li><span><strong>¾ cup</strong> packed brown sugar</span></li>
-                <li><span><strong>2 large</strong> eggs</span></li>
-                <li><span><strong>2 teaspoons</strong> vanilla extract</span></li>
-                <li><span><strong>2 cups</strong> chocolate chips</span></li>
-                <li><span><strong>1 cup</strong> chopped walnuts <em>(optional)</em></span></li>
-            </ul>
+            <form class="ingredient-checklist" aria-labelledby="ingredients-title" aria-describedby="checklist-hint">
+                <p id="checklist-hint" class="checklist-hint">Check things off as you go.</p>
+                <ul class="ingredients-list" role="list">
+                    <li>
+                        <label for="ingredient-1">
+                            <input type="checkbox" id="ingredient-1" name="ingredient-1">
+                            <span><strong>2¼ cups</strong> all-purpose flour</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-2">
+                            <input type="checkbox" id="ingredient-2" name="ingredient-2">
+                            <span><strong>1 teaspoon</strong> baking soda</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-3">
+                            <input type="checkbox" id="ingredient-3" name="ingredient-3">
+                            <span><strong>1 teaspoon</strong> salt</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-4">
+                            <input type="checkbox" id="ingredient-4" name="ingredient-4">
+                            <span><strong>1 cup (2 sticks)</strong> butter, softened</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-5">
+                            <input type="checkbox" id="ingredient-5" name="ingredient-5">
+                            <span><strong>¾ cup</strong> granulated sugar</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-6">
+                            <input type="checkbox" id="ingredient-6" name="ingredient-6">
+                            <span><strong>¾ cup</strong> packed brown sugar</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-7">
+                            <input type="checkbox" id="ingredient-7" name="ingredient-7">
+                            <span><strong>2 large</strong> eggs</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-8">
+                            <input type="checkbox" id="ingredient-8" name="ingredient-8">
+                            <span><strong>2 teaspoons</strong> vanilla extract</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-9">
+                            <input type="checkbox" id="ingredient-9" name="ingredient-9">
+                            <span><strong>2 cups</strong> chocolate chips</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ingredient-10">
+                            <input type="checkbox" id="ingredient-10" name="ingredient-10">
+                            <span><strong>1 cup</strong> chopped walnuts <em>(optional)</em></span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="reset-checklist" type="reset">Clear checks</button>
+            </form>
             <aside class="prep-note" aria-labelledby="prep-note-title">
                 <h3 id="prep-note-title">Before you start</h3>
                 <p>Set out the butter to soften. Have parchment paper, baking sheets, and a wire rack ready.</p>

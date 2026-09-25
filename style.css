@@ -34,6 +34,7 @@ body {
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
 h1,
@@ -324,9 +325,59 @@ h2 {
     display: flex;
     align-items: flex-start;
     gap: var(--space-3);
-    padding-block: var(--space-3);
     border-bottom: 1px solid var(--color-mist);
     line-height: 1.5;
+}
+
+/* native checkboxes keep the checklist usable without scripts */
+.checklist-hint {
+    margin-top: var(--space-4);
+    font-size: var(--text-small);
+}
+
+.ingredients-list label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    width: 100%;
+    min-height: 3rem;
+    padding-block: var(--space-3);
+    cursor: pointer;
+}
+
+.ingredients-list input {
+    flex: 0 0 1.125rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0.1875rem 0 0;
+    accent-color: var(--color-blue);
+    cursor: pointer;
+}
+
+.ingredients-list input:checked + span {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.1em;
+}
+
+.ingredients-list label:hover {
+    background: var(--color-mist);
+}
+
+.reset-checklist {
+    min-height: 2.75rem;
+    margin-top: var(--space-4);
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-blue);
+    border-radius: 0.25rem;
+    background: var(--color-paper);
+    color: var(--color-blue);
+    font-size: var(--text-small);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reset-checklist:hover {
+    background: var(--color-mist);
 }
 
 .ingredients-list strong {
@@ -476,5 +527,137 @@ h2 {
 
     .ingredients-section {
         padding: var(--space-6);
+    }
+}
+
+/* remove decoration and preserve useful cooking content on paper */
+@media print {
+    @page {
+        margin: 0.55in;
+    }
+
+    body {
+        background: none;
+        font-size: 10pt;
+        line-height: 1.4;
+    }
+
+    .site-header,
+    .site-footer,
+    .skip-link,
+    .recipe-photo,
+    .recipe-link,
+    .reset-checklist,
+    .checklist-hint,
+    .recipe-footer {
+        display: none;
+    }
+
+    :focus-visible {
+        outline: none;
+    }
+
+    .recipe {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .recipe-header {
+        padding: 0;
+    }
+
+    .eyebrow {
+        margin-bottom: var(--space-2);
+    }
+
+    h1 {
+        max-width: none;
+        font-size: 27pt;
+    }
+
+    h1 br {
+        display: none;
+    }
+
+    .recipe-description {
+        max-width: none;
+        margin-top: var(--space-3);
+        font-size: 10pt;
+    }
+
+    .recipe-summary {
+        margin-block: var(--space-4);
+        padding: var(--space-3) 0;
+        background: none;
+        border-block: 1px solid var(--color-ink);
+    }
+
+    .recipe-meta {
+        flex-wrap: nowrap;
+        gap: var(--space-3);
+    }
+
+    .recipe-meta dd {
+        font-size: 16pt;
+    }
+
+    .recipe-meta dt,
+    .timing-note {
+        font-size: 8pt;
+    }
+
+    .ingredients-section {
+        margin-bottom: var(--space-5);
+        padding: 0;
+        border: 0;
+    }
+
+    .ingredients-list {
+        columns: 2;
+        column-gap: var(--space-6);
+    }
+
+    .ingredients-list li {
+        break-inside: avoid;
+    }
+
+    .ingredients-list label {
+        min-height: 0;
+        padding-block: var(--space-1);
+    }
+
+    .ingredients-list input:checked + span {
+        text-decoration: none;
+    }
+
+    .prep-note {
+        margin-top: var(--space-3);
+        padding: 0;
+        background: none;
+    }
+
+    .section-heading {
+        padding-bottom: var(--space-2);
+        break-after: avoid;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    .instruction-step {
+        gap: var(--space-3);
+        padding-block: var(--space-3);
+        break-inside: avoid;
+    }
+
+    .instruction-step h3 {
+        margin-bottom: var(--space-1);
+        font-size: 11pt;
+    }
+
+    .instruction-step p {
+        max-width: none;
     }
 }
