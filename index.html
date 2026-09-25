@@ -3,117 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Card Assignment - Make This Beautiful!</title>
+    <meta name="description" content="Classic chocolate chip cookies with a clear ingredient list, eight simple steps, and recipe timing at a glance.">
+    <title>Classic Chocolate Chip Cookies | Kenneth's Kitchen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="recipe-container">
-        <!-- Recipe Header Section -->
+    <a class="skip-link" href="#ingredients">Skip to ingredients</a>
+    <header class="site-header">
+        <a class="site-name" href="./">Kenneth's Kitchen<span class="site-mark" aria-hidden="true">✳</span></a>
+        <span class="site-description">A little time. Something good.</span>
+    </header>
+
+    <main class="recipe" id="recipe">
+        <!-- introduce the recipe before the cooking details -->
         <header class="recipe-header">
-            <h1 class="recipe-title">Classic Chocolate Chip Cookies</h1>
-            <img src="https://via.placeholder.com/300x200/8B4513/FFFFFF?text=Cookie+Photo" 
-                 alt="Golden brown chocolate chip cookies on a cooling rack" 
-                 class="recipe-image">
+            <p class="eyebrow">The recipe notebook <span aria-hidden="true">/</span> Baking</p>
+            <h1>Classic chocolate<br>chip cookies<span class="title-period">.</span></h1>
+            <p class="recipe-description">Crispy edges. Chewy middles. Plenty of chocolate. A classic batch for lunch boxes, holiday gatherings, or just because.</p>
+            <a class="recipe-link" href="#instructions">Let's bake <span aria-hidden="true">↘</span></a>
         </header>
 
-        <!-- Recipe Meta Information -->
-        <section class="recipe-meta">
-            <div class="meta-item">
-                <strong>Prep Time:</strong> 15 minutes
-            </div>
-            <div class="meta-item">
-                <strong>Cook Time:</strong> 12 minutes
-            </div>
-            <div class="meta-item">
-                <strong>Total Time:</strong> 27 minutes
-            </div>
-            <div class="meta-item">
-                <strong>Servings:</strong> 24 cookies
-            </div>
-            <div class="meta-item">
-                <strong>Difficulty:</strong> Easy
-            </div>
+        <figure class="recipe-photo">
+            <img src="assets/chocolate-chip-cookies.jpg" width="1000" height="1000" alt="Chocolate chip cookies with golden edges resting on a wire cooling rack." fetchpriority="high">
+            <figcaption>Chocolate chip inspiration · Photo by <a href="https://unsplash.com/photos/chocolate-chip-cookies-cooling-on-a-wire-rack-S9Wxl_7adfY">Scotty Turner</a></figcaption>
+        </figure>
+
+        <!-- keep time, yield, and difficulty together for a quick scan -->
+        <section class="recipe-summary" aria-label="Recipe at a glance">
+            <dl class="recipe-meta">
+                <div><dt>Prep time</dt><dd>15 <span>min</span></dd></div>
+                <div><dt>Cook time</dt><dd>12 <span>min</span></dd></div>
+                <div><dt>Total time</dt><dd>27 <span>min</span></dd></div>
+                <div><dt>Makes</dt><dd>24 <span>cookies</span></dd></div>
+                <div><dt>Difficulty</dt><dd>Easy</dd></div>
+            </dl>
+            <p class="timing-note">Times are estimates from the original recipe. Check for golden edges at 9–11 minutes; allow time to cool.</p>
         </section>
 
-        <!-- Recipe Description -->
-        <section class="recipe-description">
-            <p>These classic chocolate chip cookies are crispy on the edges, chewy in the middle, and packed with chocolate chips. Perfect for any occasion, from lunch boxes to holiday gatherings. This foolproof recipe has been tested countless times and always delivers delicious results.</p>
-        </section>
-
-        <!-- Ingredients Section -->
-        <section class="ingredients-section">
-            <h2>Ingredients</h2>
+        <!-- keep ingredients before instructions in the reading order -->
+        <section class="ingredients-section" id="ingredients" aria-labelledby="ingredients-title" tabindex="-1">
+            <div class="section-heading">
+                <h2 id="ingredients-title">Ingredients</h2>
+                <span class="section-detail">One batch</span>
+            </div>
             <ul class="ingredients-list">
-                <li>2¼ cups all-purpose flour</li>
-                <li>1 teaspoon baking soda</li>
-                <li>1 teaspoon salt</li>
-                <li>1 cup (2 sticks) butter, softened</li>
-                <li>¾ cup granulated sugar</li>
-                <li>¾ cup packed brown sugar</li>
-                <li>2 large eggs</li>
-                <li>2 teaspoons vanilla extract</li>
-                <li>2 cups chocolate chips</li>
-                <li>1 cup chopped walnuts (optional)</li>
+                <li><span><strong>2¼ cups</strong> all-purpose flour</span></li>
+                <li><span><strong>1 teaspoon</strong> baking soda</span></li>
+                <li><span><strong>1 teaspoon</strong> salt</span></li>
+                <li><span><strong>1 cup (2 sticks)</strong> butter, softened</span></li>
+                <li><span><strong>¾ cup</strong> granulated sugar</span></li>
+                <li><span><strong>¾ cup</strong> packed brown sugar</span></li>
+                <li><span><strong>2 large</strong> eggs</span></li>
+                <li><span><strong>2 teaspoons</strong> vanilla extract</span></li>
+                <li><span><strong>2 cups</strong> chocolate chips</span></li>
+                <li><span><strong>1 cup</strong> chopped walnuts <em>(optional)</em></span></li>
             </ul>
+            <aside class="prep-note" aria-labelledby="prep-note-title">
+                <h3 id="prep-note-title">Before you start</h3>
+                <p>Set out the butter to soften. Have parchment paper, baking sheets, and a wire rack ready.</p>
+            </aside>
         </section>
 
-        <!-- Instructions Section -->
-        <section class="instructions-section">
-            <h2>Instructions</h2>
-            <ol class="instructions-list">
-                <li class="instruction-step">
-                    <strong>Preheat oven</strong> to 375°F (190°C). Line baking sheets with parchment paper.
-                </li>
-                <li class="instruction-step">
-                    <strong>Mix dry ingredients:</strong> In a medium bowl, whisk together flour, baking soda, and salt. Set aside.
-                </li>
-                <li class="instruction-step">
-                    <strong>Cream butter and sugars:</strong> In a large bowl, beat softened butter with both sugars until light and fluffy, about 2-3 minutes.
-                </li>
-                <li class="instruction-step">
-                    <strong>Add eggs and vanilla:</strong> Beat in eggs one at a time, then stir in vanilla extract.
-                </li>
-                <li class="instruction-step">
-                    <strong>Combine wet and dry:</strong> Gradually blend in the flour mixture until just combined. Don't overmix.
-                </li>
-                <li class="instruction-step">
-                    <strong>Fold in chocolate chips:</strong> Stir in chocolate chips and nuts (if using).
-                </li>
-                <li class="instruction-step">
-                    <strong>Shape and bake:</strong> Drop rounded tablespoons of dough onto prepared baking sheets, spacing 2 inches apart. Bake 9-11 minutes until golden brown.
-                </li>
-                <li class="instruction-step">
-                    <strong>Cool:</strong> Let cool on baking sheet for 2 minutes, then transfer to wire rack.
-                </li>
+        <section class="instructions-section" id="instructions" aria-labelledby="instructions-title" tabindex="-1">
+            <div class="section-heading">
+                <h2 id="instructions-title">Let's make cookies</h2>
+                <span class="section-detail">8 steps</span>
+            </div>
+            <ol class="instructions-list" role="list">
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">01</span><div><h3>Preheat the oven</h3><p>Heat to <strong>375°F (190°C)</strong>. Line baking sheets with parchment paper.</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">02</span><div><h3>Mix the dry ingredients</h3><p>In a medium bowl, whisk together flour, baking soda, and salt. Set aside.</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">03</span><div><h3>Cream the butter and sugars</h3><p>In a large bowl, beat softened butter with both sugars until light and fluffy, about <strong>2–3 minutes</strong>.</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">04</span><div><h3>Add the eggs and vanilla</h3><p>Beat in eggs one at a time, then stir in vanilla extract.</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">05</span><div><h3>Combine wet and dry</h3><p>Gradually blend in the flour mixture until just combined. Don't overmix.</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">06</span><div><h3>Fold in the chocolate chips</h3><p>Stir in chocolate chips and nuts (if using).</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">07</span><div><h3>Shape and bake</h3><p>Drop rounded tablespoons of dough onto prepared baking sheets, spacing <strong>2 inches apart</strong>. Bake <strong>9–11 minutes</strong> until golden brown.</p></div></li>
+                <li class="instruction-step"><span class="step-number" aria-hidden="true">08</span><div><h3>Let them cool</h3><p>Let cool on the baking sheet for <strong>2 minutes</strong>, then transfer to a wire rack.</p></div></li>
             </ol>
         </section>
 
-        <!-- Recipe Footer -->
         <footer class="recipe-footer">
-            <p>Recipe adapted from traditional family cookbook | Nutritional info: ~150 calories per cookie</p>
-            <p>Tags: dessert, baking, cookies, chocolate, family-friendly</p>
+            <p class="closing-note">Worth turning the oven on for.</p>
+            <p>Dessert · Baking · Cookies · Chocolate</p>
+            <p>Recipe supplied for INST630. Nutrition estimate from the starter: approximately 150 calories per cookie.</p>
+            <a href="#recipe">Back to recipe <span aria-hidden="true">↑</span></a>
         </footer>
-    </div>
-
-    <!-- Assignment Instructions (remove this section when styling) -->
-    <div style="background: white; border: 3px solid black; margin: 20px; padding: 20px; font-family: Arial;">
-        <h2>Your Assignment: Make This Recipe Card Beautiful!</h2>
-        <h3>Requirements:</h3>
-        <ul>
-            <li><strong>Use semantic HTML structure</strong> - the HTML is already properly structured with header, main sections, lists</li>
-            <li><strong>Implement responsive flexbox layouts</strong> - make it work on mobile and desktop</li>
-            <li><strong>Create visual hierarchy</strong> - use typography, spacing, and color to guide the user's eye</li>
-            <li><strong>Design for usability</strong> - this should be easy to follow while cooking</li>
-            <li><strong>Make it beautiful</strong> - choose cohesive colors, fonts, and spacing</li>
-        </ul>
-        <h3>Focus Areas:</h3>
-        <ul>
-            <li>Layout: Use flexbox for responsive design</li>
-            <li>Typography: Create clear information hierarchy</li>
-            <li>Color & Contrast: Ensure readability</li>
-            <li>Spacing: Use consistent margins and padding</li>
-            <li>Mobile-first: Design works on small screens</li>
-        </ul>
-    </div>
+    </main>
+    <footer class="site-footer"><span>Kenneth's Kitchen</span><span>Made for the everyday baker.</span></footer>
 </body>
 </html>
