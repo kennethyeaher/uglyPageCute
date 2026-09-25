@@ -71,3 +71,9 @@ These are text contrast measurements, not a claim of complete WCAG conformance. 
 6. Open print preview and confirm that all ten ingredients and eight steps remain readable.
 7. Check the browser console and network panel for errors or missing assets.
 8. Run `git diff --check` before committing.
+
+## Published site
+
+The [live recipe](https://kennethyeaher.github.io/uglyPageCute/) is published through GitHub Pages. The live page passed the same Chrome checks at all eight listed widths. The HTML, CSS, photograph, and icon returned HTTP 200 and matched the tested local files byte for byte.
+
+The W3C Nu HTML validator reported no errors and two advisory warnings about explicit `list` roles on the ingredient and instruction lists. Those roles are retained intentionally: Safari can remove list semantics when `list-style: none` is applied. [MDN documents this accessibility behavior and the explicit role workaround](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#accessibility). This is a compatibility precaution, not a claim of a completed Safari test.

@@ -1,5 +1,7 @@
 # Kenneth's Kitchen
 
+[View the live recipe](https://kennethyeaher.github.io/uglyPageCute/)
+
 A redesign of the INST630 chocolate chip cookie recipe card. The page puts recipe timing up front, keeps ingredients beside the instructions on larger screens, and stacks the content on phones. Ingredients can be checked off with a mouse, touch, or keyboard.
 
 ## Run locally
