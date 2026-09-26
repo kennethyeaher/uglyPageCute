@@ -1,3 +1,39 @@
+<p align="center">
+  <img src="docs/readme/banner.svg" alt="Kenneth’s Kitchen. A recipe made easier to follow." width="100%">
+</p>
+
+<p align="center">
+  <img alt="HTML + CSS" src="https://img.shields.io/badge/HTML%20%2B%20CSS-244985?style=flat-square">
+  <a href="https://kennethyeaher.github.io/uglyPageCute/"><img alt="Open live site" src="https://img.shields.io/badge/demo-live-244985?style=flat-square"></a>
+</p>
+
+<p align="center"><a href="https://kennethyeaher.github.io/uglyPageCute/">Live site ↗</a> &nbsp; · &nbsp; <a href="docs/design-notes.md">Design rationale</a> &nbsp; · &nbsp; <a href="assets/README.md">Photo credit</a></p>
+
+## Overview
+
+A responsive chocolate chip cookie recipe that puts timing, ingredients, and instructions within easy reach. Built for INST630 from the supplied recipe starter, with native ingredient checkboxes and a layout that works on screen and paper.
+
+## At a glance
+
+| Area | What to look for |
+| --- | --- |
+| **Content hierarchy** | Recipe timing up front, followed by ingredients and numbered steps. |
+| **Interaction** | Check off ingredients and clear the checklist using native form controls. |
+| **Layout** | CSS Grid for the recipe structure; Flexbox for smaller groups; dedicated print styles. |
+
+## Start here
+
+Open `index.html` directly, or serve the repository with `python3 -m http.server 8000`. No build or package installation is required.
+
+## Scope
+
+The course recipe and its timing discrepancy are retained. This is an interface exercise; the recipe has not been kitchen tested for this project.
+
+---
+
+<details>
+<summary><strong>Recipe details, design notes, and source credits</strong></summary>
+
 # Kenneth's Kitchen
 
 [View the live recipe](https://kennethyeaher.github.io/uglyPageCute/)
@@ -54,3 +90,5 @@ The recipe comes from the supplied `asst_1_recipe` course starter. All ten ingre
 The starter lists 12 minutes of cooking time and 27 minutes total, while its baking step says 9–11 minutes. Both are retained with a visible timing note. Nutrition is the starter's estimate, not an independently calculated value. The recipe itself has not been kitchen tested for this project.
 
 The photo is by [Scotty Turner on Unsplash](https://unsplash.com/photos/chocolate-chip-cookies-cooling-on-a-wire-rack-S9Wxl_7adfY), used under the [Unsplash License](https://unsplash.com/license). See [photo credit](assets/README.md). The supplied textbook and personal style guides are reference materials and are not included in this repository.
+
+</details>
