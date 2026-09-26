@@ -4,6 +4,15 @@
 
 A redesign of the INST630 chocolate chip cookie recipe card. The page puts recipe timing up front, keeps ingredients beside the instructions on larger screens, and stacks the content on phones. Ingredients can be checked off with a mouse, touch, or keyboard.
 
+
+![Recipe page showing the cookie photograph, timing facts, and ingredient checklist.](docs/readme/preview.png)
+
+Desktop browser capture of the recipe page.
+
+## My contribution
+
+I redesigned the supplied recipe card with responsive layout, a native ingredient checklist, keyboard navigation, and print styles. The original recipe content and its inconsistencies remain documented below.
+
 ## Run locally
 
 Open `index.html` in a browser. No installation, build step, external font request, or JavaScript is required. The photo and site icon are stored locally.
@@ -54,3 +63,14 @@ The recipe comes from the supplied `asst_1_recipe` course starter. All ten ingre
 The starter lists 12 minutes of cooking time and 27 minutes total, while its baking step says 9–11 minutes. Both are retained with a visible timing note. Nutrition is the starter's estimate, not an independently calculated value. The recipe itself has not been kitchen tested for this project.
 
 The photo is by [Scotty Turner on Unsplash](https://unsplash.com/photos/chocolate-chip-cookies-cooling-on-a-wire-rack-S9Wxl_7adfY), used under the [Unsplash License](https://unsplash.com/license). See [photo credit](assets/README.md). The supplied textbook and personal style guides are reference materials and are not included in this repository.
+
+---
+
+## Author
+
+**Kenneth Yeaher**  
+MS in Human Computer Interaction  
+University of Maryland, College Park  
+[![LinkedIn: Kenneth Yeaher](https://img.shields.io/badge/LinkedIn-Kenneth_Yeaher-0A66C2?style=flat)](https://www.linkedin.com/in/kennethyeaher/)
+
+`HTML and CSS` · `Responsive Design`
