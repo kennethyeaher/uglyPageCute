@@ -1,5 +1,8 @@
 # Kenneth's Kitchen
 
+![HTML5](docs/readme/badges/html5-E34F26.svg)
+![CSS](docs/readme/badges/css-663399.svg)
+
 [View the live recipe](https://kennethyeaher.github.io/uglyPageCute/)
 
 A redesign of the INST630 chocolate chip cookie recipe card. The page puts recipe timing up front, keeps ingredients beside the instructions on larger screens, and stacks the content on phones. Ingredients can be checked off with a mouse, touch, or keyboard.
@@ -33,6 +36,12 @@ Open `http://localhost:8000`.
 - Print through the browser menu. Print styles remove the photo and navigation while preserving the recipe.
 
 The checklist does not save progress across devices or sessions. A browser may restore form values on reload; **Clear checks** resets them explicitly.
+
+## What to look for
+
+The recipe is usable through native browser controls: ingredient checkboxes, a reset button, and in-page navigation. The wide layout keeps ingredients near the method, while the narrow layout follows a single reading order. Printing removes the decorative page elements and keeps the recipe content.
+
+This makes the project a small study in reducing the steps between reading a recipe and using it, without adding a JavaScript application or account system.
 
 ## Files
 
